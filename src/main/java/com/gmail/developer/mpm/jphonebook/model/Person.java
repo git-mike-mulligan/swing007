@@ -8,8 +8,8 @@ public class Person extends AbstractModelObject {
 	private String name;
 	private String email;
 	private String phone;
-	private String mobilephone1;
-	private String mobilephone2;
+	private String mobilePhone1;
+	private String mobilePhone2;
 	private Date dateOfBirth;
 	private Address address;
 	
@@ -20,16 +20,16 @@ public class Person extends AbstractModelObject {
 	public Person(String name, 
 					String email, 
 					String phone, 
-					String mobilephone1, 
-					String mobilephone2, 
+					String mobilePhone1, 
+					String mobilePhone2, 
 					Date dateOfBirth, 
 					Address address) {
 		super();
 		this.name = name;
 		this.email = email;
 		this.phone = phone;
-		this.mobilephone1 = mobilephone1;
-		this.mobilephone2 = mobilephone2;
+		this.mobilePhone1 = mobilePhone1;
+		this.mobilePhone2 = mobilePhone2;
 		this.dateOfBirth = dateOfBirth;
 		this.address = address;
 	}
@@ -64,25 +64,25 @@ public class Person extends AbstractModelObject {
 		firePropertyChange("phone", oldValue, this.phone);
 	}
 
-	public String getMobilephone1() {
-		return mobilephone1;
+	public String getMobilePhone1() {
+		return mobilePhone1;
 	}
 
-	public void setMobilephone1(String mobilephone1) {
-		String oldValue = this.mobilephone1;
-		this.mobilephone1 = mobilephone1;
-		firePropertyChange("mobilephone1", oldValue, this.mobilephone1);
+	public void setMobilePhone1(String mobilePhone1) {
+		String oldValue = this.mobilePhone1;
+		this.mobilePhone1 = mobilePhone1;
+		firePropertyChange("mobilePhone1", oldValue, this.mobilePhone1);
 		
 	}
 
-	public String getMobilephone2() {
-		return mobilephone2;
+	public String getMobilePhone2() {
+		return mobilePhone2;
 	}
 
-	public void setMobilephone2(String mobilephone2) {
-		String oldValue = this.mobilephone2;
-		this.mobilephone2 = mobilephone2;
-		firePropertyChange("mobilephone2", oldValue, this.mobilephone2);
+	public void setMobilePhone2(String mobilePhone2) {
+		String oldValue = this.mobilePhone2;
+		this.mobilePhone2 = mobilePhone2;
+		firePropertyChange("mobilePhone2", oldValue, this.mobilePhone2);
 		
 	}
 	
@@ -116,10 +116,10 @@ public class Person extends AbstractModelObject {
 		builder.append(email);
 		builder.append(", phone=");
 		builder.append(phone);
-		builder.append(", mobilephone1=");
-		builder.append(mobilephone1);
-		builder.append(", mobilephone2=");
-		builder.append(mobilephone2);
+		builder.append(", mobilePhone1=");
+		builder.append(mobilePhone1);
+		builder.append(", mobilePhone2=");
+		builder.append(mobilePhone2);
 		builder.append(", dateOfBirth=");
 		builder.append(dateOfBirth);
 		builder.append(", address=");
