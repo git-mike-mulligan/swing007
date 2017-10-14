@@ -1,13 +1,20 @@
-package com.gmail.developer.mpm;
+package com.gmail.developer.mpm.jphonebook.model;
 
-public class Address {
+import java.io.Serializable;
+
+public class Address extends AbstractModelObject implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String streetAddress1;
 	private String streetAddress2;
 	private String city;
 	private String state;
 	private String postalCode;
 	private String country;
+	
 	
 	public Address(String streetAddress1, 
 					String streetAddress2, 
